@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-cover-custom {
+            background-image: url('https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-opacity-80 {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-cover-custom min-h-screen flex items-center justify-center">
+    <div class="bg-opacity-80 shadow-md rounded-lg p-6 w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4">To-Do List</h1>
+        <div class="mb-4">
+            <input id="new-task" type="text" placeholder="Add a new task" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <button id="add-task" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none">Add Task</button>
+        <ul id="task-list" class="mt-4 space-y-2"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
